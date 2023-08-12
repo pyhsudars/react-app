@@ -1,0 +1,38 @@
+import React from 'react'
+import BatteryGauge from 'react-battery-gauge'
+
+interface Props {
+  charging?: boolean
+  animated?: boolean
+  value?: number
+}
+
+const defaultProps = {
+  charging: false,
+  animated: false,
+  value: 100,
+}
+
+const AppBatteryGuage: React.FC<Props> = (props: Props) => {
+  const params = { ...defaultProps, ...props }
+  return (
+    <>
+      <BatteryGauge
+        {...params}
+        size={100}
+        customization={{
+          readingText: {
+            lightContrastColor: '#111',
+            darkContrastColor: '#fff',
+            lowBatteryColor: 'red',
+            fontFamily: 'Helvetica',
+            fontSize: 0,
+            showPercentage: false,
+          },
+        }}
+      />
+    </>
+  )
+}
+
+export default AppBatteryGuage
