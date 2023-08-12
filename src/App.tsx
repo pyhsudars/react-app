@@ -1,12 +1,13 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import './App.scss'
-import Layout from './containers/layout/Layout'
+import AppRoutes from './routes'
 
 function App() {
   return (
-    <div className='App'>
-      <Layout>The project content goes here...</Layout>
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   )
 }
 
