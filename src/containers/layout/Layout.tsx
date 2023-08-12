@@ -10,10 +10,13 @@ interface Props {
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
   return (
     <div>
-      <Header />
+      <section className='header'>
+        <Header />
+      </section>
+
       <main role='main' className='Site'>
         <div className='Site-content'>
-          <div className='main'>{props.children}</div>
+          <div className='container'>{props.children}</div>
         </div>
       </main>
       {/* <Footer /> */}
