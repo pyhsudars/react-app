@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.branding {
+  background-color: #000;
+  color: $white;
+  .logo {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    line-height: 69px;
+    margin-left: 48px;
+    padding-right: 8px;
+  }
+
+  .logo-txt {
+    font-family: $font-family-sans-serif-logos;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: 8px;
+  }
+
+  .h3-text {
+    display: inline;
+    vertical-align: middle;
+    padding: 8px;
+    font-weight: 500;
+  }
+}
