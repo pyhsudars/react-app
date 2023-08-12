@@ -1,14 +1,13 @@
 import React from 'react'
 import Banner from '../banner/banner'
+import './header.scss'
+import { Link } from 'react-router-dom'
 
 const Header: React.FC = () => {
   return (
     <header>
       <Banner />
-      <nav
-        className='navbar navbar-expand-md navbar-dark bg-dark'
-        style={{ borderTop: '.25px solid #A4AAAE' }}
-      >
+      <nav className='navbar navbar-expand-md navbar-dark bg-dark menu-border'>
         <button
           className='navbar-toggler'
           type='button'
@@ -23,14 +22,14 @@ const Header: React.FC = () => {
         <div className='collapse navbar-collapse' id='navbarCollapse'>
           <ul className='navbar-nav mx-5 mr-auto'>
             <li className='nav-item mx-5 active'>
-              <a className='nav-link' href='/'>
+              <Link className='nav-link' to='/'>
                 Home
-              </a>
+              </Link>
             </li>
             <li className='nav-item mx-5 '>
-              <a className='nav-link' href='/'>
+              <Link className='nav-link' to='/upload-files'>
                 Upload Battery Data
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
