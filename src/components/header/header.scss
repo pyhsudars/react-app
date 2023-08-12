@@ -1,0 +1,13 @@
+.navbar .collapse {
+  background: #000;
+}
+.menu-border {
+  border-top: 0.25px solid #606161;
+}
+
+.nav-link {
+  color: aliceblue;
+  &:hover {
+    color: aquamarine;
+  }
+}
