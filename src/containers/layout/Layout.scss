@@ -1,7 +1,3 @@
-main > .container {
-  padding: 60px 15px 0;
-}
-
 :root {
   --space: 1.5em 0;
   --space: 2em 0;
@@ -10,7 +6,7 @@ main > .container {
 .Site {
   display: flex;
   flex-direction: column;
-  min-height: 96vh;
+  min-height: 100vh;
 }
 
 .Site-content {
@@ -25,4 +21,8 @@ main > .container {
   margin-top: var(--space);
   height: 0;
   visibility: hidden;
+}
+
+.header {
+  margin-bottom: 24px;
 }
